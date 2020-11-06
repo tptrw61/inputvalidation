@@ -117,4 +117,76 @@ public class IVExt extends IV {
     public static double getNonNegativeDouble(String question) {
         return getDoubleGE(question, 0);
     }
+    
+    //setters and getters
+    public static String getIntInRangeWarning() {
+        return intInRangeWarning;
+    }
+    public static void setIntInRangeWarning(String s) {
+        if (!strIsEmpty(s))
+            intInRangeWarning = s;
+    }
+    public static String getDoubleInRangeWarning() {
+        return doubleInRangeWarning;
+    }
+    public static void setDoubleInRangeWarning(String s) {
+        if (!strIsEmpty(s))
+            doubleInRangeWarning = s;
+    }
+    public static String getIntGEWarning() {
+        return intGEWarning;
+    }
+    public static void setIntGEWarning(String s) {
+        if (!strIsEmpty(s))
+            intGEWarning = s;
+    }
+    public static String getIntLEWarning() {
+        return intLEWarning;
+    }
+    public static void setIntLEWarning(String s) {
+        if (!strIsEmpty(s))
+            intLEWarning = s;
+    }
+    public static String getIntGTWarning() {
+        return intGTWarning;
+    }
+    public static void setIntGTWarning(String s) {
+        if (!strIsEmpty(s))
+            intGTWarning = s;
+    }
+    public static String getIntLTWarning() {
+        return intLTWarning;
+    }
+    public static void setIntLTWarning(String s) {
+        if (!strIsEmpty(s))
+            intLTWarning = s;
+    }
+    public static String getDoubleGEWarning() {
+        return doubleGEWarning;
+    }
+    public static void setDoubleGEWarning(String s) {
+        if (!strIsEmpty(s))
+            doubleGEWarning = s;
+    }
+    public static String getDoubleLEWarning() {
+        return doubleLEWarning;
+    }
+    public static void setDoubleLEWarning(String s) {
+        if (!strIsEmpty(s))
+            doubleLEWarning = s;
+    }
+    public static String getDoubleGTWarning() {
+        return doubleGTWarning;
+    }
+    public static void setDoubleGTWarning(String s) {
+        if (!strIsEmpty(s))
+            doubleGTWarning = s;
+    }
+    public static String getDoubleLTWarning() {
+        return doubleLTWarning;
+    }
+    public static void setDoubleLTWarning(String s) {
+        if (!strIsEmpty(s))
+            doubleLTWarning = s;
+    }
 }
