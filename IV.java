@@ -4,18 +4,18 @@ import java.util.Scanner;
 public class IV {
     private static Scanner internalScanner = null;
     
-    protected static String byteWarning = "Please enter a byte: ";
-    protected static String shortWarning = "Please enter a short: ";
-    protected static String intWarning = "Please enter an integer: ";
-    protected static String longWarning = "Please enter a long: ";
+    protected static String byteWarning = "Please enter a byte";
+    protected static String shortWarning = "Please enter a short";
+    protected static String intWarning = "Please enter an integer";
+    protected static String longWarning = "Please enter a long";
     
-    protected static String floatWarning = "Please enter a number: ";
-    protected static String doubleWarning = "Please enter a number: ";
+    protected static String floatWarning = "Please enter a number";
+    protected static String doubleWarning = "Please enter a number";
     
-    protected static String nameWarning = "Please enter a name (no special characters or numbers or spaces): ";
-    protected static String fullNameWarning = "Please enter a name (no special characters or numbers): ";
+    protected static String nameWarning = "Please enter a name (no special characters or numbers or spaces)";
+    protected static String fullNameWarning = "Please enter a name (no special characters or numbers)";
     
-    protected static String ynWarning = "Please enter yes or no (y or n): ";
+    protected static String ynWarning = "Please enter yes or no (y or n)";
     
     //stuff to hold onto the scanner
     public final static void setScanner(Scanner scanner) {
@@ -49,7 +49,8 @@ public class IV {
         Scanner in = getScanner();
         System.out.print(question);
         while (!in.hasNextByte()) {
-            System.out.print(byteWarning);
+            System.out.println(byteWarning);
+            System.out.print(question);
             in.nextLine();
         }
         byte x = in.nextByte();
@@ -60,7 +61,8 @@ public class IV {
         Scanner in = getScanner();
         System.out.print(question);
         while (!in.hasNextShort()) {
-            System.out.print(shortWarning);
+            System.out.println(shortWarning);
+            System.out.print(question);
             in.nextLine();
         }
         short x = in.nextShort();
@@ -71,7 +73,8 @@ public class IV {
         Scanner in = getScanner();
         System.out.print(question);
         while (!in.hasNextInt()) {
-            System.out.print(intWarning);
+            System.out.println(intWarning);
+            System.out.print(question);
             in.nextLine();
         }
         int x = in.nextInt();
@@ -82,7 +85,8 @@ public class IV {
         Scanner in = getScanner();
         System.out.print(question);
         while (!in.hasNextLong()) {
-            System.out.print(longWarning);
+            System.out.println(longWarning);
+            System.out.print(question);
             in.nextLine();
         }
         long x = in.nextLong();
@@ -94,7 +98,8 @@ public class IV {
         Scanner in = getScanner();
         System.out.print(question);
         while (!in.hasNextFloat()) {
-            System.out.print(floatWarning);
+            System.out.println(floatWarning);
+            System.out.print(question);
             in.nextLine();
         }
         float x = in.nextFloat();
@@ -105,7 +110,8 @@ public class IV {
         Scanner in = getScanner();
         System.out.print(question);
         while (!in.hasNextDouble()) {
-            System.out.print(doubleWarning);
+            System.out.println(doubleWarning);
+            System.out.print(question);
             in.nextLine();
         }
         double x = in.nextDouble();
@@ -118,7 +124,8 @@ public class IV {
         System.out.print(question);
         String s = in.nextLine();
         while (!isName(s)) {
-            System.out.print(nameWarning);
+            System.out.println(nameWarning);
+            System.out.print(question);
             s = in.nextLine();
         }
         return s;
@@ -128,7 +135,8 @@ public class IV {
         System.out.print(question);
         String s = in.nextLine();
         while (!isFullName(s)) {
-            System.out.print(fullNameWarning);
+            System.out.println(fullNameWarning);
+            System.out.print(question);
             s = in.nextLine();
         }
         return s;
@@ -138,7 +146,8 @@ public class IV {
         System.out.print(question);
         String s = in.nextLine();
         while (!isYorN(s)) {
-            System.out.print(ynWarning);
+            System.out.println(ynWarning);
+            System.out.print(question);
             s = in.nextLine();
         }
         return s.equalsIgnoreCase("y") || s.equalsIgnoreCase("yes");
