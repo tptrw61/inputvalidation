@@ -49,9 +49,11 @@ public class IV {
         Scanner in = getScanner();
         System.out.print(question);
         while (!in.hasNextByte()) {
-            System.out.println(byteWarning);
-            System.out.print(question);
-            in.nextLine();
+			String s = in.nextLine();
+			if (!s.isEmpty()) {
+				System.out.println(byteWarning);
+				System.out.print(question);
+			}
         }
         byte x = in.nextByte();
         in.nextLine();
@@ -61,9 +63,11 @@ public class IV {
         Scanner in = getScanner();
         System.out.print(question);
         while (!in.hasNextShort()) {
-            System.out.println(shortWarning);
-            System.out.print(question);
-            in.nextLine();
+            String s = in.nextLine();
+			if (!s.isEmpty()) {
+				System.out.println(shortWarning);
+				System.out.print(question);
+			}
         }
         short x = in.nextShort();
         in.nextLine();
@@ -73,9 +77,11 @@ public class IV {
         Scanner in = getScanner();
         System.out.print(question);
         while (!in.hasNextInt()) {
-            System.out.println(intWarning);
-            System.out.print(question);
-            in.nextLine();
+            String s = in.nextLine();
+			if (!s.isEmpty()) {
+				System.out.println(intWarning);
+				System.out.print(question);
+			}
         }
         int x = in.nextInt();
         in.nextLine();
@@ -85,9 +91,11 @@ public class IV {
         Scanner in = getScanner();
         System.out.print(question);
         while (!in.hasNextLong()) {
-            System.out.println(longWarning);
-            System.out.print(question);
-            in.nextLine();
+            String s = in.nextLine();
+			if (!s.isEmpty()) {
+				System.out.println(longWarning);
+				System.out.print(question);
+			}
         }
         long x = in.nextLong();
         in.nextLine();
@@ -98,9 +106,11 @@ public class IV {
         Scanner in = getScanner();
         System.out.print(question);
         while (!in.hasNextFloat()) {
-            System.out.println(floatWarning);
-            System.out.print(question);
-            in.nextLine();
+            String s = in.nextLine();
+			if (!s.isEmpty()) {
+				System.out.println(floatWarning);
+				System.out.print(question);
+			}
         }
         float x = in.nextFloat();
         in.nextLine();
@@ -110,9 +120,11 @@ public class IV {
         Scanner in = getScanner();
         System.out.print(question);
         while (!in.hasNextDouble()) {
-            System.out.println(doubleWarning);
-            System.out.print(question);
-            in.nextLine();
+            String s = in.nextLine();
+			if (!s.isEmpty()) {
+				System.out.println(doubleWarning);
+				System.out.print(question);
+			}
         }
         double x = in.nextDouble();
         in.nextLine();
