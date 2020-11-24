@@ -134,33 +134,33 @@ public class IV {
     public static String getName(String question) {
         Scanner in = getScanner();
         System.out.print(question);
-        String s = in.nextLine();
+        String s = in.nextLine().trim();
         while (!isName(s)) {
             System.out.println(nameWarning);
             System.out.print(question);
-            s = in.nextLine();
+            s = in.nextLine().trim();
         }
         return s;
     }
     public static String getFullName(String question) {
         Scanner in = getScanner();
         System.out.print(question);
-        String s = in.nextLine();
+        String s = in.nextLine().trim();
         while (!isFullName(s)) {
             System.out.println(fullNameWarning);
             System.out.print(question);
-            s = in.nextLine();
+            s = in.nextLine().trim();
         }
         return s;
     }
     public static boolean getYorN(String question) {
         Scanner in = getScanner();
         System.out.print(question);
-        String s = in.nextLine();
+        String s = in.nextLine().trim();
         while (!isYorN(s)) {
             System.out.println(ynWarning);
             System.out.print(question);
-            s = in.nextLine();
+            s = in.nextLine().trim();
         }
         return s.equalsIgnoreCase("y") || s.equalsIgnoreCase("yes");
     }
